@@ -59,4 +59,4 @@ jobs:
       with:
         files: json-sort-${{ matrix.os }}.zip
         prerelease: true
-        token: ${{ secrets.GH_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
