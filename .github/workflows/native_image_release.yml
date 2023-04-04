@@ -15,6 +15,9 @@ jobs:
         os: ['windows-latest']
     name: build - ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
+    # https://github.com/softprops/action-gh-release/issues/236#issuecomment-1150530128
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v3
     - name: GitHub Action for GraalVM JDK 17
