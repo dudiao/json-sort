@@ -42,8 +42,8 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         type: 'zip'
-        path: 'target/json-sort-*'
-        filename: json-sort-${{ matrix.os }}.zip
+        path: 'target/json-sort'
+        filename: json-sort-${{ matrix.os }}
         exclusions: 'target/json-sort-*.txt'
     # 上传构建产物
     - name: Upload artifact
